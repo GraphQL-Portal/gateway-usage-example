@@ -1,5 +1,0 @@
-name: product
-handler:
-  openapi:
-    source: /Users/german/Projects/codestore/graphql-portal-examples/schemas/product.yaml
-    baseUrl: http://localhost:3002
