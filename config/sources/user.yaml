@@ -1,5 +1,5 @@
 name: user
 handler:
   openapi:
-    source: /Users/german/Projects/codestore/graphql-portal-examples/schemas/user.yaml
+    source: ./schemas/user.yaml
     baseUrl: http://localhost:3001
