@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start-services": "concurrently --kill-others-on-fail 'node services/user.js' 'node services/product.js' 'node services/order.js'",
+    "start": "portal"
+  },
+  "dependencies": {
+    "@graphql-portal/gateway": "^0.9.1",
+    "axios": "^0.21.1",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  }
+}
