@@ -1,0 +1,44 @@
+swagger: '2.0'
+paths:
+  /products:
+    get:
+      summary: Returns a list of products.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  example: 1
+                name:
+                  type: string
+                  example: name
+  /products/{id}:
+    get:
+      summary: Returns a product by id.
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          description: The ID of a product
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+                example: 1
+              name:
+                type: string
+                example: some product
